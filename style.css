@@ -1,6 +1,7 @@
 * {
   z-index: 0;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: Helvetica;
   color: seashell;
   background-color: black;
@@ -8,7 +9,7 @@
 }
 
 header {
-  padding: 20px 30px;
+  margin: 20rem auto;
   width: 100%;
   z-index: 2;
 }
@@ -25,6 +26,10 @@ ul {
 
 
 /* Styles */
+
+.title {
+  margin: 1rem;
+}
 
 .navBar {
   display: flex;
@@ -45,51 +50,6 @@ ul {
 
 .navItem a {
   text-decoration: none;
-}
-
-/*playing with grid design*/
-.container {
-  display: grid;
-  max-width: 900px;
-  position: relative;
-  margin: auto;
-  gap: 10px;
-  grid-template-areas: "header header"
-                       "nav nav"
-                       "left right"
-                       "footer footer";
-  grid-template-rows: 150px 200px 600px 200px;
-  grid-template-columns: 200px 400px;
-}
-
-h1, h2 {
-  font-family: monospace;
-  text-align: center;
-}
-
-header {
-  background-color: dodgerblue;
-  grid-area: header;
-}
-
-nav {
-  background-color: beige;
-  grid-area: nav;
-}
-
-.left {
-  background-color: dodgerblue;
-  grid-area: left;
-}
-
-.right {
-  background-color: beige;
-  grid-area: right;
-}
-
-footer {
-  background-color: dodgerblue;
-  grid-area: footer;
 }
 
 
