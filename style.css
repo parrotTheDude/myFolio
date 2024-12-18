@@ -12,7 +12,7 @@
 }
 
 main {
-  margin: 4rem auto;
+  margin: 2rem auto;
   width: 80%;
 }
 
@@ -35,7 +35,7 @@ ul {
   border: 2px solid #7dda5d;
   border-radius: 50%;
   display: inline-block;
-  background-image: url(octo.jpg);
+  background-image: url(octo.webp);
   background-position: center;
   background-size: 20rem;
 }
@@ -63,5 +63,36 @@ ul {
   color: #7dda5d;
 }
 
+.formSection {
+  padding-top: 3rem;
+}
+
+.inputContainer {
+  padding: 0.5rem;
+}
+
+.formInput {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 25rem;
+}
+
+.formInputMessage {
+  width: 25rem;
+  padding: 0.5rem;
+}
+
+.submitBtn {
+  padding: 1rem;
+}
 
 
+
+@media screen and (max-width: 650px) { 
+  .formInput {
+    width: 100%;
+  }
+  .formInputMessage {
+    width: 100%;
+  }
+}
