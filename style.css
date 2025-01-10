@@ -2,13 +2,17 @@
   z-index: 0;
   margin: 0px;
   padding: 0px;
-  font-family: "Raleway", sans-serif;
+  font-family: space, mono, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: seashell;
   background-color: black;
   text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 main {
@@ -63,12 +67,25 @@ ul {
   color: #7dda5d;
 }
 
-.formSection {
-  padding-top: 3rem;
+#contactBtn {
+  padding: 1rem;
 }
 
-.inputContainer {
-  padding: 0.5rem;
+.formSection {
+  padding-top: 3rem;
+  display: none;
+  height: 0rem;
+  transition: 2s;
+  width: 100%;
+}
+
+.formStyle {
+  width: 100%;
+  display: block;
+}
+
+.formInputContainer {
+  margin: 1rem;
 }
 
 .formInput {
@@ -77,7 +94,7 @@ ul {
   width: 25rem;
 }
 
-.formInputMessage {
+.formInputMsg {
   width: 25rem;
   padding: 0.5rem;
   font-size: 1rem;
@@ -88,13 +105,26 @@ ul {
   margin-left: 1.5rem;
 }
 
+.is-open {
+  display: block;
+  height: 40rem;
+}
+
 
 
 @media screen and (max-width: 650px) { 
   .formInput {
     width: 100%;
   }
-  .formInputMessage {
+  .formInputMsg {
     width: 100%;
   }
 }
+
+/* FONT FAMILY CSS */
+@font-face { font-family: space; src: url('fonts/SpaceGrotesk-VariableFont_wght.ttf'); 
+  font-display: swap;
+ }
+ @font-face { font-family: mono; src: url('fonts/ShareTechMono-Regular.ttf'); 
+  font-display: swap;
+ }
