@@ -33,7 +33,7 @@
 		</header>
 
 		<main>
-			<section class="blogTestContainer">
+			<section class="blogDisplayTestContainer">
 				<section class="blogTitleDiv">
 					<h1>welcome to my test blog</h1>
 					<p>this is just text to show how it might look when implimented onto a live website</p>
