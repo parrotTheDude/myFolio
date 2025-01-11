@@ -5,6 +5,7 @@ function db_connect($server = DB_SERVER, $username = DB_SERVER_USERNAME, $passwo
   global $$link;
   
   $$link = new mysqli($server, $username, $password, $database);
+  $$link->set_charset("utf8");
   
   if ($$link) mysqli_select_db($$link, $database) or die("Error Connecting To Database");
   return $$link;
