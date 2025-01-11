@@ -218,9 +218,128 @@ ul {
   text-decoration: none;
 }
 
+.mainBlog {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.sideChannel {
+  width: 20%;
+  padding: 0.5rem 1rem;
+}
+
+.imgBlogContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.mainBlogTitleContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.blogTitle {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.blogMainTitleDiv {
+  width: 40%;
+  margin: auto;
+}
+
+.blogContentContainer {
+  background-color: #327892;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#noPad {
+  padding: 0;
+}
+
+.paragraphSection {
+  margin: 1rem 0rem;
+}
+
+.imgContainerArticle {
+
+}
+
+.articleLink {
+  text-decoration: none;
+  color: yellow;
+}
+
+.articleLink:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.imgLabel {
+
+}
+
+/* Progress bar */
+#progress-bar {
+  --scrollAmount: 0%;
+  background-color: yellow;
+  width: var(--scrollAmount);
+  height: 1rem;
+  position: fixed;
+  top: 0;
+}
+
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
+
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all 0.5s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media screen and (max-width: 1500px) { 
   .blogPanel {
     width: 45%;
+  }
+  .sideChannel {
+    width: 25%;
+  }
+  .mainBlog {
+    width: 70%;
+  }
+  .blogMainTitleDiv {
+    width: 80%;
   }
 }
 
@@ -229,10 +348,45 @@ ul {
     width: 90%;
     margin: 1rem 0rem;
   }
+  .sideChannel {
+    width: 100%;
+  }
+  .mainBlog {
+    width: 100%;
+  }
+  .imgContainerArticle {
+    margin: auto;
+  }
+  .imgBlogContainer img {
+    height: auto;
+    width: 100%;
+  }
+  .imgContainerArticle img {
+    height: auto;
+    width: 100%;
+  }
+  .blogTitle {
+    font-size: 1.5rem;
+  }
+  .paragraphSection h2 {
+    font-size: 1.2rem;
+  }
+  .paragraphSection h3 {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) { 
   .blogPanel {
     width: 100%;
+  }
+  .blogTestContainer {
+    width: 100%;
+  }
+  .blogMainTitleDiv {
+    width: 100%;
+  }
+  .mainBlogTitleContainer {
+    padding: 0;
   }
 }
