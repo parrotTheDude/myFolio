@@ -2,7 +2,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="https://jbowerman.com<?php echo htmlspecialchars($page_name); ?>">
+<base href="https://jbowerman.com">
 
 <title><?php echo htmlspecialchars($page_title); ?></title>
 <meta name="description" content="<?php echo htmlspecialchars($page_decription); ?>" />
