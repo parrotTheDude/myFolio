@@ -57,6 +57,18 @@
 					</section>
 				</section>
 				<section class="blogContentContainer">
+					<section class="sideChannel">
+						<section class="sideChanBG">
+							<h2>Contents</h2>
+							<ul>
+								<li>What are they and how can I get involved?</li>
+								<li>What Are Disability Day Programs?</li>
+								<li>Why Are Day Programs Important?</li>
+								<li>More title links</li>
+								<li>The most title links</li>
+							</ul>
+						</section>
+					</section>
 					<section class="mainBlog">
 						<section class="paragraphSection">
 							<h2>Disability Day Programs: What are they and how can I get involved?</h2>
@@ -138,9 +150,6 @@
 					    <p>At TDAC, we believe in creating opportunities for growth, connection, and empowerment. We are trying to provide the best disability day programs in Victoria. If you're interested in exploring our programs, <a class="articleLink" href="https://thatdisabilityadventurecompany.com.au/group-activities">check out our group activities today!</a></p>
 					    <p>For more information, <a class="articleLink" href="https://thatdisabilityadventurecompany.com.au/contact">head over to our contact page to get in touch today!</a></p>
 					  </section>
-					</section>
-					<section class="sideChannel">
-						<p>Section for the contents and the authors? </p>
 					</section>
 				</section>
 			</section>
