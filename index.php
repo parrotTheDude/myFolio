@@ -51,38 +51,6 @@
 			<section>
 				<p class="title">jbowerman... also known as parrotTheDude</p>
 			</section>
-
-			<section>
-				<?php 
-					if ($result == "failed") { 
-						echo "<p>Something went wrong! Your message was not sent.";
-					} elseif ($result == "sent") {
-						echo "<p>Your message was sent!</p><p>Thanks for getting in touch.";
-					} else {
-						echo "<button id='contactBtn' onclick='smoothScroll()'>want to get in contact?</button>";
-					}
-				?>
-			</section>
-
-			<section class="formSection" id="contactForm">
-				<h2>Want to work with me? Drop me a message!</h2>
-      	<form action="sendmail" method="POST" id="form" class="formStyle">
-      		<div class="formInputContainer">
-          	<input type="text" name="name" id="name" placeholder="John Smith" required class="formInput" />
-          </div>
-          <div class="formInputContainer">
-          	<input type="email" name="email" id="email" placeholder="you@company.com" required class="formInput" />
-          </div>
-          <div class="formInputContainer">
-            <textarea rows="5" name="message" id="message" form="form" placeholder="Your Message" class="formInputMsg" required></textarea>
-          </div>
-          <div class="formBtnContainer">
-            <button type="submit" name="submit" id="formBtn" class="submitBtn">
-              Send Message
-            </button>
-          </div>
-        </form>
-			</section>
 		</main>
 
 		<footer>
