@@ -2,17 +2,39 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "<?php echo htmlspecialchars($page_title); ?>",
+  "name": "Jacob Bowerman",
+  "alternateName": "Bowerman Digital",
+  "url": "https://jbowerman.com<?= htmlspecialchars($page_name) ?>",
   "image": "https://jbowerman.com/octo.webp",
-  "@id": "",
-  "url": "https://jbowerman.com<?php echo htmlspecialchars($page_name); ?>",
+  "logo": "https://jbowerman.com/octo.webp",
+  "description": <?= json_encode($page_decription) ?>,
+  "founder": {
+    "@type": "Person",
+    "name": "Jacob Bowerman",
+    "jobTitle": "Full Stack Developer",
+    "url": "https://jbowerman.com",
+    "sameAs": [
+      "https://github.com/parrotTheDude",
+      "https://www.linkedin.com/in/jacob-bowerman-47180a337/",
+      "https://bowermandigital.com/",
+      "https://vizzbud.com/"
+    ]
+  },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "",
     "addressLocality": "Sydney",
     "addressRegion": "NSW",
-    "postalCode": "",
     "addressCountry": "AU"
-  }
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Australia"
+  },
+  "sameAs": [
+    "https://github.com/parrotTheDude",
+    "https://www.linkedin.com/in/jacob-bowerman-47180a337/",
+    "https://bowermandigital.com/",
+    "https://vizzbud.com/"
+  ]
 }
 </script>
