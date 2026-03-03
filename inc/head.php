@@ -3,7 +3,7 @@
 <base href="https://jbowerman.com/">
 
 <title><?= htmlspecialchars($page_title) ?></title>
-<meta name="description" content="<?= htmlspecialchars($page_decription) ?>" />
+<meta name="description" content="<?= htmlspecialchars($page_description) ?>" />
 <link rel="canonical" href="https://jbowerman.com<?= htmlspecialchars($page_name) ?>" />
 
 <!-- Icons -->
@@ -16,7 +16,7 @@
 <meta property="og:locale" content="en_AU" />
 <meta property="og:url" content="https://jbowerman.com<?= htmlspecialchars($page_name) ?>" />
 <meta property="og:title" content="<?= htmlspecialchars($page_title) ?>" />
-<meta property="og:description" content="<?= htmlspecialchars($page_decription) ?>" />
+<meta property="og:description" content="<?= htmlspecialchars($page_description) ?>" />
 <meta property="og:image" content="https://jbowerman.com/octo.webp" />
 <meta property="og:site_name" content="Jacob Bowerman" />
 

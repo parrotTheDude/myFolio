@@ -8,7 +8,6 @@
       include('inc/head.php');
       include('inc/schema.php');
     ?>
-    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -20,13 +19,13 @@
 
       <nav class="nav fade-up" style="animation-delay: .3s;">
         <ul>
-          <li><a href="https://github.com/parrotTheDude" target="_blank">git</a></li>
-          <li><a href="https://www.linkedin.com/in/jacob-bowerman-47180a337/" target="_blank">linkedin</a></li>
+          <li><a href="https://github.com/parrotTheDude" target="_blank" rel="noopener noreferrer">git</a></li>
+          <li><a href="https://www.linkedin.com/in/jacob-bowerman-47180a337/" target="_blank" rel="noopener noreferrer">linkedin</a></li>
           <li><a href="mailto:hello@bowermandigital.com?subject=Website Enquiry">email</a></li>
-          <li><a href="https://vizzbud.com" target="_blank">vizzbud</a></li>
-          <li><a href="https://eviebowerman.com" target="_blank">evie</a></li>
-          <li><a href="https://thatdisabilityadventurecompany.com.au/" target="_blank">tdac</a></li>
-          <li><a href="https://bowermandigital.com/" target="_blank">bowerman digital</a></li>
+          <li><a href="https://vizzbud.com" target="_blank" rel="noopener noreferrer">vizzbud</a></li>
+          <li><a href="https://eviebowerman.com" target="_blank" rel="noopener noreferrer">evie</a></li>
+          <li><a href="https://thatdisabilityadventurecompany.com.au/" target="_blank" rel="noopener noreferrer">tdac</a></li>
+          <li><a href="https://bowermandigital.com/" target="_blank" rel="noopener noreferrer">bowerman digital</a></li>
         </ul>
       </nav>
 
