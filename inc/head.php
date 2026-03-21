@@ -37,7 +37,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-main);text-al
 .picture{height:12rem;width:12rem;border-radius:50%;border:2px solid var(--accent);background:url("/octo.webp") center/cover no-repeat;box-shadow:0 0 25px var(--accent-glow);animation:pulseGlow 5s ease-in-out infinite;transition:transform .4s ease,box-shadow .4s ease}
 .picture:hover{transform:scale(1.08);box-shadow:0 0 45px var(--accent)}
 @keyframes pulseGlow{0%{transform:scale(1);box-shadow:0 0 25px var(--accent-glow)}25%{transform:scale(1.03);box-shadow:0 0 35px rgba(125,218,93,0.4)}50%{transform:scale(1.06);box-shadow:0 0 45px rgba(125,218,93,0.6)}75%{transform:scale(1.03);box-shadow:0 0 35px rgba(125,218,93,0.4)}100%{transform:scale(1);box-shadow:0 0 25px var(--accent-glow)}}
-.terminal{font-family:var(--font-mono);font-size:1.1rem;color:var(--accent);text-align:center;line-height:1.8;white-space:nowrap}
+.name{font-family:var(--font-mono);font-size:1.6rem;font-weight:500;color:var(--text);letter-spacing:.03em;text-transform:lowercase;margin:0}
+.terminal{font-family:var(--font-mono);font-size:1rem;color:var(--accent);text-align:center;line-height:1.8;white-space:nowrap}
 .cursor{animation:blink .8s step-end infinite;color:var(--accent)}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 .projects{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:720px;width:100%;margin-bottom:1.5rem}
@@ -56,7 +57,7 @@ footer{position:relative;z-index:1;padding:1rem;font-size:.8rem;color:#8a8a8a;fo
 .fade-up:nth-child(n){animation-delay:calc(.1s * var(--i))}
 @keyframes fadeUp{0%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
-@media(max-width:640px){.container{padding:2.5rem 1rem}.hero{gap:1rem;margin-bottom:1.5rem}.picture{height:7rem;width:7rem}.terminal{font-size:.65rem;white-space:nowrap}.projects{grid-template-columns:repeat(2,1fr);gap:.6rem;max-width:100%}.card{padding:.8rem}.card h2{font-size:.8rem}.card p{font-size:.65rem}.socials{gap:1.2rem}.socials svg{width:18px;height:18px}.tag{font-size:.75rem;margin-top:.6rem}footer{padding:.8rem;font-size:.7rem}}
+@media(max-width:640px){.container{padding:2.5rem 1rem}.hero{gap:.8rem;margin-bottom:1.5rem}.picture{height:7rem;width:7rem}.name{font-size:1.2rem}.terminal{font-size:.7rem;white-space:nowrap}.projects{grid-template-columns:repeat(2,1fr);gap:.6rem;max-width:100%}.card{padding:.8rem}.card h2{font-size:.8rem}.card p{font-size:.65rem}.socials{gap:1.2rem}.socials svg{width:18px;height:18px}.tag{font-size:.75rem;margin-top:.6rem}footer{padding:.8rem;font-size:.7rem}}
 </style>
 
 <!-- Mobile App Friendly -->
