@@ -21,6 +21,7 @@
 <meta property="og:site_name" content="Jacob Bowerman" />
 
 <!-- Performance -->
+<link rel="preload" href="/octo.webp" as="image" type="image/webp" fetchpriority="high">
 <link rel="preload" href="/fonts/SpaceGrotesk-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/ShareTechMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <style>
