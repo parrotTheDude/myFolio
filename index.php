@@ -62,7 +62,7 @@
     <script>
     /* ====== Terminal Typing ====== */
     (() => {
-      const text = 'jacob bowerman | full stack engineer | syd, australia';
+      const text = 'jacob bowerman | full stack engineer | sydney, australia';
       const el = document.getElementById('typed');
       let i = 0;
 
@@ -90,7 +90,8 @@
       window.addEventListener('resize', resize);
       document.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
 
-      const count = Math.min(80, Math.floor(window.innerWidth / 15));
+      const isMobile = window.innerWidth < 640;
+      const count = isMobile ? 30 : Math.min(80, Math.floor(window.innerWidth / 15));
       for (let i = 0; i < count; i++) {
         particles.push({
           x: Math.random() * w,
