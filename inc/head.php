@@ -37,7 +37,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-main);text-al
 .picture{height:12rem;width:12rem;border-radius:50%;border:2px solid var(--accent);background:url("/octo.webp") center/cover no-repeat;box-shadow:0 0 25px var(--accent-glow);animation:pulseGlow 5s ease-in-out infinite;transition:transform .4s ease,box-shadow .4s ease}
 .picture:hover{transform:scale(1.08);box-shadow:0 0 45px var(--accent)}
 @keyframes pulseGlow{0%{transform:scale(1);box-shadow:0 0 25px var(--accent-glow)}25%{transform:scale(1.03);box-shadow:0 0 35px rgba(125,218,93,0.4)}50%{transform:scale(1.06);box-shadow:0 0 45px rgba(125,218,93,0.6)}75%{transform:scale(1.03);box-shadow:0 0 35px rgba(125,218,93,0.4)}100%{transform:scale(1);box-shadow:0 0 25px var(--accent-glow)}}
-.terminal{font-family:var(--font-mono);font-size:1.1rem;color:var(--accent);text-align:left;line-height:1.8;min-height:7.2em}
+.terminal{font-family:var(--font-mono);font-size:1.1rem;color:var(--accent);text-align:center;line-height:1.8;white-space:nowrap}
 .cursor{animation:blink .8s step-end infinite;color:var(--accent)}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;max-width:500px;width:100%;margin-bottom:1.5rem}
@@ -56,7 +56,7 @@ footer{position:relative;z-index:1;padding:1rem;font-size:.8rem;color:#8a8a8a;fo
 .fade-up:nth-child(n){animation-delay:calc(.1s * var(--i))}
 @keyframes fadeUp{0%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
-@media(max-width:640px){.picture{height:8rem;width:8rem}.terminal{font-size:.9rem}.projects{grid-template-columns:1fr;max-width:280px}.socials{gap:1.5rem}.socials a{font-size:.9rem}}
+@media(max-width:640px){.picture{height:8rem;width:8rem}.terminal{font-size:.75rem}.projects{grid-template-columns:1fr;max-width:280px}.socials{gap:1.5rem}}
 </style>
 
 <!-- Mobile App Friendly -->

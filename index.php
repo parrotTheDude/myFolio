@@ -62,27 +62,15 @@
     <script>
     /* ====== Terminal Typing ====== */
     (() => {
-      const lines = [
-        '> jacob bowerman',
-        '> full stack developer',
-        '> sydney, australia',
-        '> building things for the web'
-      ];
+      const text = 'jacob bowerman | full stack engineer | syd, australia';
       const el = document.getElementById('typed');
-      let lineIdx = 0, charIdx = 0;
+      let i = 0;
 
       function type() {
-        if (lineIdx >= lines.length) return;
-        const line = lines[lineIdx];
-        if (charIdx <= line.length) {
-          el.innerHTML = lines.slice(0, lineIdx).join('<br>') +
-            (lineIdx > 0 ? '<br>' : '') + line.slice(0, charIdx);
-          charIdx++;
+        if (i <= text.length) {
+          el.textContent = text.slice(0, i);
+          i++;
           setTimeout(type, 35 + Math.random() * 25);
-        } else {
-          lineIdx++;
-          charIdx = 0;
-          setTimeout(type, 400);
         }
       }
       setTimeout(type, 600);
