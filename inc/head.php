@@ -46,11 +46,9 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-main);text-al
 .card h2{font-family:var(--font-mono);font-size:.95rem;color:var(--accent);font-weight:500;margin-bottom:.3rem}
 .card p{font-family:var(--font-mono);font-size:.75rem;color:#8a8a8a}
 .card:hover p{color:var(--text)}
-.socials{display:flex;gap:2rem;margin-bottom:.5rem}
-.socials a{color:var(--accent);text-decoration:none;font-family:var(--font-mono);font-size:.95rem;position:relative;transition:all .3s ease}
-.socials a::after{content:'';position:absolute;bottom:-2px;left:0;width:100%;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
-.socials a:hover{color:#fff;text-shadow:0 0 8px var(--accent)}
-.socials a:hover::after{transform:scaleX(1)}
+.socials{display:flex;gap:1.5rem;margin-bottom:.5rem;align-items:center}
+.socials a{color:var(--accent);display:flex;align-items:center;transition:all .3s ease}
+.socials a:hover{color:#fff;filter:drop-shadow(0 0 6px var(--accent))}
 .tag{margin-top:1rem;font-family:var(--font-mono);font-size:.9rem;color:var(--accent);opacity:.85}
 footer{position:relative;z-index:1;padding:1rem;font-size:.8rem;color:#8a8a8a;font-family:var(--font-mono);border-top:1px solid rgba(255,255,255,0.05)}
 .fade-in{animation:fadeIn 1s ease forwards}
