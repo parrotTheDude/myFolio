@@ -26,6 +26,4 @@
 <link rel="stylesheet" href="/style.css" />
 
 <!-- Mobile App Friendly -->
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="mobile-web-app-capable" content="yes" />
