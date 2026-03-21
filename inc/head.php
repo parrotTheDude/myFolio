@@ -21,8 +21,8 @@
 <meta property="og:site_name" content="Jacob Bowerman" />
 
 <!-- Performance -->
-<link rel="preload" href="/fonts/SpaceGrotesk-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="preload" href="/fonts/ShareTechMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/fonts/SpaceGrotesk-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/ShareTechMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css" />
 
 <!-- Mobile App Friendly -->
