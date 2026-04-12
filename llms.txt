@@ -1,0 +1,23 @@
+# Jacob Bowerman
+
+> Full stack developer, creative, and ocean wanderer based in Sydney, Australia.
+
+Jacob Bowerman is a full stack engineer who builds web applications and digital experiences. He runs Bowerman Digital, a web studio and dev agency, and creates projects across diving, accessibility, and personal web development.
+
+## Projects
+
+- [Bowerman Digital](https://bowermandigital.com/): Web studio and dev agency
+- [Vizzbud](https://vizzbud.com): Scuba divers paradise - a platform for the diving community
+- [Evie Bowerman](https://eviebowerman.com): Personal site build
+- [TDAC](https://thatdisabilityadventurecompany.com.au/): Disability adventure company
+
+## Links
+
+- [Website](https://jbowerman.com)
+- [GitHub](https://github.com/parrotTheDude)
+- [LinkedIn](https://www.linkedin.com/in/jacob-bowerman-47180a337/)
+- [Email](mailto:hello@bowermandigital.com)
+
+## Contact
+
+For web development enquiries, reach out at hello@bowermandigital.com.
