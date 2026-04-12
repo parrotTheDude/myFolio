@@ -1,4 +1,4 @@
+# Security policy for jbowerman.com
 Contact: mailto:hello@bowermandigital.com
 Preferred-Languages: en
 Canonical: https://jbowerman.com/.well-known/security.txt
-Expires: 2027-03-21T00:00:00.000Z

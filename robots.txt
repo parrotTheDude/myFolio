@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://jbowerman.com/sitemap.xml
+
+# AI discoverability
+# https://jbowerman.com/llms.txt

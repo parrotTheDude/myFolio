@@ -20,6 +20,12 @@
 <meta property="og:image" content="https://jbowerman.com/octo.webp" />
 <meta property="og:site_name" content="Jacob Bowerman" />
 
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="<?= htmlspecialchars($page_title) ?>" />
+<meta name="twitter:description" content="<?= htmlspecialchars($page_description) ?>" />
+<meta name="twitter:image" content="https://jbowerman.com/octo.webp" />
+
 <!-- Performance -->
 <link rel="preload" href="/octo.webp" as="image" type="image/webp" fetchpriority="high">
 <link rel="preload" href="/fonts/SpaceGrotesk-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
