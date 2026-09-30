@@ -1,4 +1,0 @@
-# Security policy for jbowerman.com
-Contact: mailto:hello@bowermandigital.com
-Preferred-Languages: en
-Canonical: https://jbowerman.com/.well-known/security.txt

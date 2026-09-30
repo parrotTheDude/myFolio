@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <?php
-      $page_title = 'Jacob Bowerman | Full Stack Developer';
+      $page_title = 'jbowerman | Full Stack Developer';
       $page_description = "Full stack developer, creative, and ocean wanderer.";
       $page_name = '/';
       include('inc/head.php');
@@ -11,14 +11,15 @@
   </head>
 
   <body>
-    <canvas id="particles"></canvas>
+    <canvas id="particles" aria-hidden="true"></canvas>
 
     <main class="container fade-in">
       <div class="hero">
         <div class="picture fade-up"></div>
-        <h1 class="name fade-up" style="animation-delay: .15s;">jacob bowerman</h1>
+        <h1 class="name fade-up" style="animation-delay: .15s;">jbowerman</h1>
         <div class="terminal fade-up" style="animation-delay: .3s;">
-          <span id="typed"></span><span class="cursor">_</span>
+          <span class="sr-only">full stack engineer</span>
+          <span id="typed" aria-hidden="true"></span><span class="cursor" aria-hidden="true">_</span>
         </div>
       </div>
 
@@ -57,15 +58,16 @@
     </main>
 
     <footer class="fade-up" style="animation-delay: .9s;">
-      <p class="footer-text">&copy; <?= date('Y'); ?> Jacob Bowerman</p>
+      <p class="footer-text">&copy; <?= date('Y'); ?> jbowerman</p>
     </footer>
 
     <script>
     /* ====== Terminal Typing ====== */
     (() => {
-      const text = 'full stack engineer | sydney, australia';
+      const text = 'full stack engineer';
       const el = document.getElementById('typed');
       let i = 0;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = text; return; }
 
       function type() {
         if (i <= text.length) {
@@ -81,6 +83,7 @@
     (() => {
       const c = document.getElementById('particles');
       const ctx = c.getContext('2d');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       let w, h, particles = [], mouse = { x: -1000, y: -1000 };
 
       function resize() {
@@ -88,7 +91,7 @@
         h = c.height = window.innerHeight;
       }
       resize();
-      window.addEventListener('resize', resize);
+      window.addEventListener('resize', () => { resize(); if (reduceMotion) draw(); });
       document.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
 
       const isMobile = window.innerWidth < 640;
@@ -146,7 +149,7 @@
             }
           }
         }
-        requestAnimationFrame(draw);
+        if (!reduceMotion) requestAnimationFrame(draw);
       }
       draw();
     })();

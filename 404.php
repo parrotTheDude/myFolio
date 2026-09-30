@@ -2,15 +2,16 @@
 <html lang="en">
   <head>
     <?php
-      $page_title = '404 | Jacob Bowerman';
+      $page_title = '404 | jbowerman';
       $page_description = 'Page not found.';
       $page_name = '/404';
+      $noindex = true;
       include('inc/head.php');
     ?>
   </head>
 
   <body>
-    <canvas id="particles"></canvas>
+    <canvas id="particles" aria-hidden="true"></canvas>
 
     <main class="container fade-in">
       <div class="hero">
@@ -28,19 +29,21 @@
     </main>
 
     <footer class="fade-up" style="animation-delay: .6s;">
-      <p class="footer-text">&copy; <?= date('Y'); ?> Jacob Bowerman</p>
+      <p class="footer-text">&copy; <?= date('Y'); ?> jbowerman</p>
     </footer>
 
     <script>
     (() => {
       const c = document.getElementById('particles');
       const ctx = c.getContext('2d');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       let w, h, particles = [], mouse = { x: -1000, y: -1000 };
       function resize() { w = c.width = window.innerWidth; h = c.height = window.innerHeight; }
       resize();
-      window.addEventListener('resize', resize);
+      window.addEventListener('resize', () => { resize(); if (reduceMotion) draw(); });
       document.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
-      const count = Math.min(80, Math.floor(window.innerWidth / 15));
+      const isMobile = window.innerWidth < 640;
+      const count = isMobile ? 30 : Math.min(80, Math.floor(window.innerWidth / 15));
       for (let i = 0; i < count; i++) {
         particles.push({ x: Math.random() * w, y: Math.random() * h, vx: (Math.random() - 0.5) * 0.3, vy: (Math.random() - 0.5) * 0.3, r: Math.random() * 1.5 + 0.5 });
       }
@@ -59,7 +62,7 @@
             if (dist < 100) { ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(particles[j].x, particles[j].y); ctx.strokeStyle = `rgba(125, 218, 93, ${0.08 * (1 - dist / 100)})`; ctx.stroke(); }
           }
         }
-        requestAnimationFrame(draw);
+        if (!reduceMotion) requestAnimationFrame(draw);
       }
       draw();
     })();

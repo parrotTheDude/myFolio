@@ -4,7 +4,11 @@
 
 <title><?= htmlspecialchars($page_title) ?></title>
 <meta name="description" content="<?= htmlspecialchars($page_description) ?>" />
+<?php if (!empty($noindex)): ?>
+<meta name="robots" content="noindex" />
+<?php else: ?>
 <link rel="canonical" href="https://jbowerman.com<?= htmlspecialchars($page_name) ?>" />
+<?php endif; ?>
 
 <!-- Icons -->
 <link rel="icon" type="image/webp" href="/octo.webp" />
@@ -18,7 +22,7 @@
 <meta property="og:title" content="<?= htmlspecialchars($page_title) ?>" />
 <meta property="og:description" content="<?= htmlspecialchars($page_description) ?>" />
 <meta property="og:image" content="https://jbowerman.com/octo.webp" />
-<meta property="og:site_name" content="Jacob Bowerman" />
+<meta property="og:site_name" content="jbowerman" />
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary" />
@@ -63,6 +67,8 @@ footer{position:relative;z-index:1;padding:1rem;font-size:.8rem;color:#8a8a8a;fo
 .fade-up:nth-child(n){animation-delay:calc(.1s * var(--i))}
 @keyframes fadeUp{0%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.fade-up,.fade-in{opacity:1;transform:none}html{scroll-behavior:auto}}
 @media(max-width:640px){.container{padding:2.5rem 1rem}.hero{gap:.8rem;margin-bottom:1.5rem}.picture{height:7rem;width:7rem}.name{font-size:1.2rem}.terminal{font-size:.7rem;white-space:nowrap}.projects{grid-template-columns:repeat(2,1fr);gap:.6rem;max-width:100%}.card{padding:.8rem}.card h2{font-size:.8rem}.card p{font-size:.65rem}.socials{gap:1.2rem}.socials svg{width:18px;height:18px}.tag{font-size:.75rem;margin-top:.6rem}footer{padding:.8rem;font-size:.7rem}}
 </style>
 

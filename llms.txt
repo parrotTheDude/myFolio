@@ -1,8 +1,8 @@
-# Jacob Bowerman
+# jbowerman
 
-> Full stack developer, creative, and ocean wanderer based in Sydney, Australia.
+> Full stack developer, creative, and ocean wanderer.
 
-Jacob Bowerman is a full stack engineer who builds web applications and digital experiences. He runs Bowerman Digital, a web studio and dev agency, and creates projects across diving, accessibility, and personal web development.
+jbowerman is a full stack engineer who builds web applications and digital experiences. He runs Bowerman Digital, a web studio and dev agency, and creates projects across diving, accessibility, and personal web development.
 
 ## Projects
 
